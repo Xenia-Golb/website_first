@@ -1,0 +1,1001 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cart_visibly: hidden;
+}
+
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header {
+    background-color: #222;
+    height: 84px;
+    width: 100vw;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 44px;
+    height: 38px;
+    padding-top: 18px;
+    gap: 40px;
+    padding-left: 100px;
+}
+
+.find {
+    padding-top: 15px;
+    width: 26.002px;
+    height: 26.792px;
+    flex-shrink: 0;
+}
+
+.mobile_svg {
+    visibility: hidden;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -20px;
+}
+
+.menu {
+    text-decoration: none;
+    width: 202px;
+    height: 654px;
+    background: #FFF;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.headerMenu:hover .menu {
+    visibility: visible;
+    transition: 0.3ms;
+}
+
+.Ul_tit_Menu {
+    margin-top: 8px;
+    margin-left: 33px;
+    width: 55px;
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menu__link1 {
+    padding-top: 20px;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 45.214px;
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu_lit_link {
+    padding-bottom: 10px;
+    width: 79.4px;
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcome {
+    background-color: #F1E4E6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+    min-height: 765px;
+}
+
+.pictWelcome {
+    width: 800.58px;
+    height: 764px;
+    flex-shrink: 0;
+    justify-content: start;
+}
+
+.titWelcome {
+    width: 377px;
+    height: 93px;
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 340px;
+    justify-items: center;
+
+}
+
+.PictTitWelcome {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    margin-top: 340px;
+}
+
+span1 {
+    color: #F16D7F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+span2 {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sale {
+    margin-top: 100px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+
+}
+
+.cardSale {
+    width: 50vw;
+    background-image: #211616;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 40%;
+    padding-bottom: 0;
+    gap: 30px;
+    justify-content: center;
+    opacity: 100%;
+    background-image: #211616;
+}
+
+
+.saleCardTit {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 154px;
+    justify-content: center;
+    margin-left: 75px;
+    margin-top: -6%;
+}
+
+.saleCardTit1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 154px;
+    margin-top: -20%;
+    margin-left: 100px;
+}
+
+.cardTop {
+    background: #211616;
+    opacity: 100%;
+    width: 360px;
+    height: 260px;
+    flex-shrink: 0;
+}
+
+.card01 {
+    opacity: 80%;
+    fill: #211616;
+}
+
+.card01:hover {
+    --cart_visibly: visible;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+    fill: #211616B2;
+}
+
+.cardBottom {
+    flex-wrap: wrap;
+    background: #211616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
+    position: relative;
+    gap: 12px;
+}
+
+.card1 {
+    --cart_visibly: visible;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+    fill: #211616B2;
+}
+
+.cardBottom:hover {
+    --cart_visibly: visible;
+    height: 100%;
+    opacity: 100%;
+    width: 100%;
+    fill: #211616B2;
+
+}
+
+.saleCardTit {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+
+span {
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.catalog {
+    background: #FFF;
+    width: 100vw;
+
+}
+
+.titCatalog {
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.parTitCatalog {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.gridCatalog {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 500px);
+    gap: 60px;
+    align-items: start;
+    justify-items: center;
+    justify-content: center
+}
+
+.cardCat {
+    background-color: #F8F8F8;
+    /* width: 360px;
+    height: 581px; */
+    flex-shrink: 0;
+
+}
+
+.cardCat1 {
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
+    background-color: #F7E4E2;
+}
+
+.pictCatalog {
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
+}
+
+.hidpict {
+    visibility: hidden;
+
+}
+
+.pictCatalog:hover {
+    fill: rgba(58, 56, 56, 0.86);
+}
+
+.pictCatalog1:hover {
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
+    fill: rgba(58, 56, 56, 0.86);
+    opacity: 100%;
+    filter: brightness(0.5)
+}
+
+.svg1:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+.svg {
+    width: 27;
+    height: 25;
+    fill: none;
+}
+
+.pictCatalog1 {
+    background-color: #F7E4E2;
+    align-content: center;
+}
+
+.pictCatalog1:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+}
+
+.titcl {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.parCatalog {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 360px;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 18px;
+}
+
+.bottomLink {
+    width: 100vw;
+    margin-top: 163px;
+    margin-bottom: 74px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+}
+
+footer {
+    width: 100vw;
+    height: 868px;
+
+}
+
+.headerFoot {
+    background-color: #222224;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    gap: 10px;
+
+}
+
+.footHeadTit {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.footHeadPar {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 130px;
+    width: 360px;
+}
+
+.footHeadPict {
+    padding-left: 160px;
+    margin-top: 100px;
+}
+
+.subscribe {
+    background: url(./img/Layer\ 41.png) lightgray 0px -169px / 100% 246.875% no-repeat;
+    min-height: 448px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .imgBack {
+    width: 100%;
+    background: url(<path-to-image>), lightgray 0px -169px / 100% 246.875% no-repeat;
+    opacity: 30%;
+} */
+
+.footSubsPictImg {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    padding-left: 300px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+
+.footSubsPictPar {
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 359.449px;
+    height: 99px;
+    flex-shrink: 0;
+    padding-left: 170px;
+}
+
+.textDecor {
+    color: #222224;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footSubsForm {
+    margin-left: -400px;
+}
+
+.FootSubscribetit {
+    width: 557px;
+    height: 61px;
+    flex-shrink: 0;
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.2%;
+    /* 40.128px */
+    padding-bottom: 32px;
+
+}
+
+.textDecorTit {
+    color: #222224;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
+
+.email {
+    display: flex;
+
+    padding-left: 100px;
+
+}
+
+.emailBut {
+    width: 256px;
+    height: 49px;
+    flex-shrink: 0;
+    background-color: #E1E1E1;
+    color: #222224;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribeBut {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerFoot {
+    min-height: 79px;
+    flex-shrink: 0;
+    background-color: #222224;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 400px;
+    justify-content: space-around;
+}
+
+.footerFootTit {
+    width: 332px;
+    color: #FBFBFB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-content: center;
+    padding-left: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerFootLogo {
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.footBrand {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: 6px solid #222224;
+    margin-top: 60px;
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+
+
+    .header {
+        max-width: 100vw;
+        min-height: 74px;
+    }
+
+    .headerLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 44px;
+        height: 38px;
+        padding-top: 38px;
+        gap: 40px;
+        padding-left: 100px;
+    }
+
+    .headerMenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-right: 50px;
+        margin-top: -20px;
+        padding-bottom: 15px;
+
+    }
+
+    .welcome {
+        max-width: 100vw;
+        min-height: 368px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+
+    .pictWelcome {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .titWelcome {
+        color: #222;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        align-content: center;
+        width: 283px;
+        height: 78px;
+        margin-top: 100px;
+    }
+
+    .PictTitWelcome {
+        width: 12px;
+        height: 92px;
+        flex-shrink: 0;
+        margin-top: 100px;
+    }
+
+    .sale {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        justify-content: center;
+
+    }
+
+    .card {
+
+        flex-shrink: 0;
+        background-color: rgba(33, 22, 22, 0.70);
+        width: 231.973px;
+        height: 167.617px;
+        flex-shrink: 0;
+
+    }
+
+    .card1 {
+        flex-shrink: 0;
+        width: 720px;
+        min-height: 116px;
+        grid-column: 1 / -1;
+        justify-content: center;
+        justify-self: center;
+
+    }
+
+    .saleCardTit1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 154px;
+        margin-top: -10%;
+        margin-left: 250px;
+    }
+
+    .gridCatalog {
+        max-width: 50vw;
+        min-height: 50vh;
+    }
+
+
+    .titCatalog {
+        max-width: 100vw;
+        color: #222;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .catalog {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .headerFoot {
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .center {
+        padding-left: calc(50% - 188px);
+        padding-right: calc(50% - 188px);
+    }
+
+    header {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+
+    .titWelcome {
+        color: #222;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        width: 236px;
+        height: 66px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile_svg {
+        visibility: visible;
+    }
+
+    .headerLogo {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .headerMenu {
+        visibility: hidden;
+    }
+
+    .welcome {
+        height: 30vh;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .titWelcome {
+        margin-top: -150%;
+        font-size: 38px;
+    }
+
+    .pictWelcome {
+        visibility: hidden;
+    }
+
+    .sale {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+        width: 100vw;
+    }
+
+    .cardSale {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0.75fr;
+        gap: 6px;
+    }
+
+    .cardBottom {
+        margin-top: 10px;
+        width: 100vw;
+        height: 111px;
+        flex-shrink: 0;
+    }
+
+    .saleCardTit1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: -10%;
+        margin-left: -10%;
+    }
+
+    .saleCardTit {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -30%;
+    }
+
+    .card {
+        justify-content: start;
+        grid-column: span 1;
+    }
+
+    .cardBottom {
+        grid-column: span 1;
+    }
+
+    .titCatalog {
+        color: #222;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .parTitCatalog {
+        color: #9F9F9F;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .gridCatalog {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .cardCat {
+        width: 359px;
+        height: 579.385px;
+        flex-shrink: 0;
+    }
+
+    .catalog {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .freeDelivery {
+        margin-top: -10px;
+        height: 200px;
+    }
+
+    .sales_Discounts {
+        margin-top: -50px;
+        height: 200px;
+    }
+
+    .qualityAssurance {
+        margin-top: -50px;
+        height: 200px;
+        padding-bottom: 30px;
+    }
+
+    .subscribe {
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 70vh;
+    }
+
+    .footSubsPict {
+        margin-bottom: 30px;
+    }
+
+    .footSubsForm {
+        justify-content: center;
+        padding-left: 80px;
+    }
+
+    .FootSubscribetit {
+        text-align: center;
+        padding-left: 130px;
+        width: 271px;
+    }
+
+    .email {
+        justify-content: center;
+        padding-left: 80px;
+        padding-right: -40px;
+        padding-bottom: 60px;
+    }
+
+    .footerFoot {
+        gap: 5px;
+    }
+
+    .footerFootTit {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .bottomLink {
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .br_mob {
+        background-color: #F16D7F;
+        ;
+        border: 6px solid #F16D7F;
+        ;
+        fill: #FFFFFF;
+    }
+
+}
